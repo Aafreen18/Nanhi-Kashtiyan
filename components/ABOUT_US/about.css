@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+    width: 50%;
+}
+.vision {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.vision-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+.education {
+    display: flex;
+    justify-content: left; 
+    margin: 20px; 
+}
+
+.education-box {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background-color:#f5f5f5; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px 0;  
+    align-self: flex-start; 
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px; 
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
