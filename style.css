@@ -19,8 +19,20 @@ nav{
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  .dropdown-menu {
-    margin-top: 0;
-  }
+display: block;
+}
+.dropdown-menu {
+margin-top: 0;
+}
+
+.btn:hover {
+    color: initial; /* Keeps the text color the same as it was before hover */
+}
+
+a:hover .btn {
+    color: initial; /* Ensures anchor hover does not change button text color */
+}
+
+.d-flex a div i {
+    color:rgb(235, 117, 200); /* Sets the icon color to pink */
+}
