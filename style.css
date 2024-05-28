@@ -17,3 +17,10 @@ nav{
     height: 87vh; 
     width: 100%; 
 }
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    margin-top: 0;
+  }
