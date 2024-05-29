@@ -57,19 +57,21 @@
   </nav>
 
   <section class="about">
-      <div class="about-image">
-          
-      </div>
-      <div class="about-text">
-          <h2>Nanhi Kashtiyan</h2>
-          <p>
-              Nanhi Kashtiyan is a registered body under Society Act, 1860 bearing Registration Number: S/RS/DW(SW)/1630/2019, working towards spreading free education among slum children in the neighborhood of Dwarka since 2013.
-          </p>
-          <p>
-              At Nanhi Kashtiyan, we actively aim to ensure inclusivity for underprivileged children within the progressing society. Education is known to change the course of history, providing a unique experience and identity to each and every child. Therefore, we realized that in order to bring meaningful change to society, it becomes imperative to educate these young pupils and free their minds from biases.
-          </p>
-      </div>
-  </section>
+    <div class="about-image">
+        <!-- Add an image here (you mentioned it's not included yet) -->
+        <img src="path/to/your/image.jpg" alt="Nanhi Kashtiyan Image">
+    </div>
+    <div class="about-text">
+        <span class="text-muted">About us</span>
+        <h2>Nanhi Kashtiyan</h2>
+        <p>
+            Nanhi Kashtiyan is a registered body under Society Act, 1860 bearing Registration Number: S/RS/DW(SW)/1630/2019, working towards spreading free education among slum children in the neighborhood of Dwarka since 2013.
+        </p>
+        <p>
+            At Nanhi Kashtiyan, we actively aim to ensure inclusivity for underprivileged children within the progressing society. Education is known to change the course of history, providing a unique experience and identity to each and every child. Therefore, we realized that in order to bring meaningful change to society, it becomes imperative to educate these young pupils and free their minds from biases.
+        </p>
+    </div>
+</section>
   
   <section class="vision gap-5">
       <div class="vision-item" >
@@ -95,6 +97,130 @@
             <li>We ensure regular classroom teaching to our children along with several co-curricular activities such as motivational movies for children.</li>
             <li>Monthly events in the form of speaker sessions and workshops by prolific speakers on topics like good touch-bad touch, self-defense, menstrual hygiene, etc.</li>
         </ol>
+    </div>
+    <div class="about-image">
+      <!-- Add an image here (you mentioned it's not included yet) -->
+      <img src="path/to/your/image.jpg" alt="Nanhi Kashtiyan Imag">
+  </section>
+  <section class="students-impacted">
+    <div class="boxes">
+      <div class="box">
+          <h1 id="years">0</h1>
+          <p>YEARS OF ACTION</p>
+      </div>
+      <div class="box">
+          <h1 id="volunteers">0</h1>
+          <p>DEDICATED VOLUNTEERS</p>
+      </div>
+      <div class="box">
+          <h1 id="campaigns">0</h1>
+          <p>SUCCESSFUL CAMPAIGNS</p>
+      </div>
+      <div class="box">
+          <h1 id="students">0</h1>
+          <p>STUDENTS IMPACTED</p>
+      </div>
+  </div>
+
+  </section>
+  <script>
+    // Animate the numbers
+    const years = document.getElementById('years');
+    const volunteers = document.getElementById('volunteers');
+    const campaigns = document.getElementById('campaigns');
+    const students = document.getElementById('students');
+
+    const targetValues = [7, 35, 14, 406];
+    const duration = 20000; // Animation duration in milliseconds
+
+    function animateCounters() {
+        const step = 50; // Increment step
+        const steps = duration / step;
+        let currentStep = 0;
+
+        function updateCounter(element, target) {
+            const increment = (target - 0) / steps;
+            const interval = setInterval(() => {
+                currentStep++;
+                const value = Math.round(increment * currentStep);
+                element.textContent = value;
+                if (currentStep >= steps) {
+                    clearInterval(interval);
+                }
+            }, step);
+        }
+
+        updateCounter(years, targetValues[0]);
+        updateCounter(volunteers, targetValues[1]);
+        updateCounter(campaigns, targetValues[2]);
+        updateCounter(students, targetValues[3]);
+    }
+
+    // Trigger the animation when the page loads
+    window.addEventListener('load', animateCounters);
+</script>
+
+  <section class="py-4 pink-background">
+    <div class="container">
+      <div class="row align-items-center gx-4">
+        <div class="col-md-5">
+          <div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <div class="ms-md-2 ms-lg-5">
+            <h1 class="lead" style="font-size: 50;">SUPPORT OUR VOLUNTEER<br> PROGRAM TO EMPOWER<br> CHILDREN</h1>
+            <div class="donatebutton">
+            <button class="donate-button">Donate Now</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-2 mb-lg-4">
+        <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
+          <span class="text-muted">Our Testimonials</span>
+          <h2 class="display-5 fw-bold">WHAT PEOPLE SAY ABOUT US </h2>
+          <p class="lead"></p>
+        </div>
+      </div>
+      <div class="row gy-5 py-4">
+        <div class="col-lg-6 d-flex align-items-start">
+          <img alt="" class="img-fluid rounded-circle me-3" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
+          <div class="bg-light p-3 p-md-5">
+            <div class="text-primary mb-1">
+              <svg class="bi bi-quote" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path></svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eliLorem ipsum dolor sit amet consectetureli</p>
+            <div class="text-end pt-2">
+              <h5 class="fw-bold">John Doe</h5>
+              <div class="text-muted">
+                Graphic Designer
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-start">
+          <img alt="" class="img-fluid rounded-circle me-3" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
+          <div class="bg-light p-3 p-md-5">
+            <div class="text-primary mb-1">
+              <svg class="bi bi-quote" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path></svg>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eli Lorem ipsum dolor sit amet consectetur eliLorem ipsum dolor sit amet consectetureli</p>
+            <div class="text-end pt-2">
+              <h5 class="fw-bold">John Doe</h5>
+              <div class="text-muted">
+                HR Manager
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
     
