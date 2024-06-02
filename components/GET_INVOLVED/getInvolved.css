@@ -36,14 +36,16 @@ h1 {
 
 .account-details {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 500px;
+    margin: 0 ;
     border-collapse: collapse;
 }
+
 .account-details th, .account-details td {
     border: 1px solid #ddd;
     padding: 8px;
 }
+
 .account-details th {
     background-color: #f2f2f2;
     text-align: left;
