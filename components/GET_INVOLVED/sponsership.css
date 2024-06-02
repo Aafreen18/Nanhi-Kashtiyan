@@ -1,0 +1,141 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff66b2; /* Pink color for headings */
+}
+
+.sponsor-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Align the form to the right */
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff3385;
+}
+
+#cost-display {
+  border: 2px solid #FF69B4; /* Pink border */
+            padding: 10px;
+            background-color: #FFF0F5; /* Light pink background */
+            font-weight: bold;
+            text-align: center; /* Center the text */
+            width: 30%; /* Adjust the width as needed */
+            margin-right: auto; /* Shift the entire box to the right */
+            margin-left: auto; /* Shift the entire box to the left (center) */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.confirmation-message {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+.sponsershippara{
+  font-size: large; font-weight: bold; padding-left: 30px;
+  
+}
+.para1, .para2 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-box {
+  flex: 1;
+  max-width: 45%; /* Adjust the width as needed */
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Styling for the buttons */
+.custom-button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #ff4785;
+}
