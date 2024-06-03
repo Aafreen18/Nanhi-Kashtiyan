@@ -1,0 +1,18 @@
+{
+  "name": "get_involved",
+  "version": "1.0.0",
+  "description": "",
+  "main": "info.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "emailjs": "^4.0.3",
+    "express": "^4.19.2",
+    "razorpay": "^2.9.4"
+  }
+}
