@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
+const emailjs = require('emailjs-com');
 app.use(express.json());
 app.use(cors()); // Use CORS to allow requests from your client-side
 
@@ -13,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/create-order', async (req, res) => {
-    const { debitAmount, currency, fullName, paymentDate} = req.body;
+    const { debitAmount, currency, fullName, paymentDate } = req.body;
 
     try {
         var instance = new Razorpay({
@@ -22,10 +23,12 @@ app.post('/create-order', async (req, res) => {
         });
 
         const time = new Date();
+        const receipt = "receipt_" + fullName + "_" + paymentDate + "_" + time.getSeconds();
+        console.log(receipt);
         const options = {
-            amount: debitAmount*100, // Amount should be in paise
+            amount: debitAmount * 100, // Amount should be in paise
             currency: currency,
-            receipt: "receipt_" + fullName + "_" + paymentDate + "_" + time.getSeconds(), // Generate a unique receipt ID for each order
+            receipt: receipt, // Generate a unique receipt ID for each order
         };
 
         const order = await instance.orders.create(options);
@@ -44,7 +47,8 @@ app.post('/create-order', async (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
+
 });
 
 
-app.post('/msg',)
+
