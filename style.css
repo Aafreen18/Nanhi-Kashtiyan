@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
+.nav-container{
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+}
 nav{
     background-color: rgb(235, 117, 200);
+    height: 100px;
+}
+
+.nav-img{
+ margin-right: 20px;
+ margin-left: 10px;
+ padding-left: 10px;
 }
 
 .details-section{
