@@ -10,11 +10,11 @@ nav{
 }
 
 .nav-img{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .details-section{
-    background-color: darkgray;
+    background-color: #BD97CB;
 }
 
 .carousel-item img {
@@ -64,13 +64,11 @@ a:hover .btn {
 }
 
 
+    
+.media-container img, video{
+    width: 100%; 
+    object-fit: cover; 
+    height: 500px;
+}
 
 
-.column1{
-    width: 400px;
-    height: 400px;
-}
-.column2{
-    width: 400px;
-    height: 400px;
-}
