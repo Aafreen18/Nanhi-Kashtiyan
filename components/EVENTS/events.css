@@ -39,3 +39,49 @@ body {
  .align-items-center {
     align-items: center;
   }
+
+
+  * {
+    box-sizing: border-box;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.video-item {
+    flex: 1 1 30%; /* Grow and shrink based on available space, starting width is 30% */
+            max-width: 30%; /* Ensure videos do not grow beyond 30% of the container */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%; /* Maintain aspect ratio */
+            margin-right: 1rem; 
+}
+
+.video-item:last-child {
+    border-right: none; /* Remove the right border from the last video */
+}
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+ .video-container {
+        flex-direction: column;
+    }
+
+ .video-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
