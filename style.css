@@ -71,4 +71,33 @@ a:hover .btn {
     height: 500px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  background-color: black;
+}
 
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  
+    
+  font-weight: 900;
+  color:red; /* Change to desired color */
+  font-size: 3rem; /* Change to desired size */
+}
+
+.donate-section{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 75vh; 
+    background-image: linear-gradient(rgb(22,22,22,0.8),rgb(22,22,22,0.1)),url(assets/donate1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+    margin-left: auto;
+}
