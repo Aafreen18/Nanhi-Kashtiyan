@@ -41,47 +41,36 @@ body {
   }
 
 
-  * {
-    box-sizing: border-box;
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
 }
 
-.video-container {
-    display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between;
-    padding: 1rem;
+.video-box {
+    border: 1px solid #ccc; /* Optional: for visual debugging */
+    position:relative; /* Needed for iframe sizing */
+    padding-bottom: 100.25%; /* Aspect ratio for 16:9 videos */
+    height: 0; /* Reset height */
 }
 
-.video-item {
-    flex: 1 1 30%; /* Grow and shrink based on available space, starting width is 30% */
-            max-width: 30%; /* Ensure videos do not grow beyond 30% of the container */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            position: relative;
-            padding-bottom: 56.25%; /* Maintain aspect ratio */
-            margin-right: 1rem; 
-}
-
-.video-item:last-child {
-    border-right: none; /* Remove the right border from the last video */
-}
-.video-item iframe {
+.video-box iframe {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50px;
+    width: 80%;
     height: 100%;
-    border: none;
+    object-fit: contain; /* Maintain aspect ratio while filling container */
+    border: 0; /* Remove default iframe border */
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
- .video-container {
-        flex-direction: column;
-    }
-
- .video-item {
-        flex-basis: 100%;
-        max-width: 100%;
-    }
+.img-fluid.rounded {
+  height: 350px; /* Adjust based on your preference */
+  width: 350px; /* Adjust based on your preference */
+  object-fit: cover; /* Ensures the aspect ratio is maintained */
+}
+.img-fluid.rounded:hover {
+  background-color: pink; /* Change the background color on hover */
+  /* Additional hover styles (e.g., font color, box shadow, etc.) */
+  transform: scale(1.1);
 }
