@@ -16,10 +16,6 @@ h1 {
     text-align: center;
 }
 
-.help-section{
-    background-color: #FB8DA0;
-}
-
 .help-section h5{
     color: rgb(235, 117, 200);
     font-weight: 700;
@@ -49,4 +45,35 @@ h1 {
 .account-details th {
     background-color: #f2f2f2;
     text-align: left;
+}
+
+.heading-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh; 
+    background-image: linear-gradient(rgba(22, 22, 22, 0.8), rgba(22, 22, 22, 0.7)), url(/assets/donate2.jpg);
+    background-size: cover;
+    background-position: top center; /* Adjust this as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+
+.volunteer-section{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-image: linear-gradient(rgb(22,22,22,0.8),rgb(22,22,22,0.1)),url(/assets/volunteer\ 1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+    margin-left: auto;
 }
