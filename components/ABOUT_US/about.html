@@ -67,62 +67,60 @@
   </nav>
 
   <section class="about p-5 bg-dark-subtle">
-    <div class="row g-5 d-flex justify-content-evenly ">
-      <div class="col-12 col-md-6 col-lg-6">
+    <div class="row g-5">
+      <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
         <div class="about-image">
-          <img src="/assets/about us/about_us.jpeg" alt="Nanhi Kashtiyan Image" style="width:70%; object-fit: cover; height: 400px; ">
+          <img src="/assets/about us/about_us.jpeg" alt="Nanhi Kashtiyan Image" style="width:100%; object-fit: cover; height: 400px; ">
         </div>
       </div>
 
-      <div class="col-12  col-md-6 col-lg-6">
+      <div class="col-12  col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
         <div class="about-text">
           <h2 class="fw-bolder" style="color: blueviolet;">Nanhi Kashtiyan</h2>
           <p>
-              Nanhi Kashtiyan is a registered body under Society Act, 1860 bearing Registration Number: S/RS/DW(SW)/1630/2019, working towards spreading free education among slum children in the neighborhood of Dwarka since 2013.
+            Nanhi Kashtiyan is a registered body under Society Act, 1860 bearing Registration Number: S/RS/DW(SW)/1630/2019, working towards spreading free education among slum children in the neighborhood of Dwarka since 2013.
           </p>
           <p>
-              At Nanhi Kashtiyan, we actively aim to ensure inclusivity for underprivileged children within the progressing society. Education is known to change the course of history, providing a unique experience and identity to each and every child. Therefore, we realized that in order to bring meaningful change to society, it becomes imperative to educate these young pupils and free their minds from biases.
+            At Nanhi Kashtiyan, we actively aim to ensure inclusivity for underprivileged children within the progressing society. Education is known to change the course of history, providing a unique experience and identity to each and every child. Therefore, we realized that in order to bring meaningful change to society, it becomes imperative to educate these young pupils and free their minds from biases.
           </p>
       </div>
       </div>
     </div>
-</section>
+  </section>
   
   <section class="vision p-5 gap-5 row g-5">
       <div class="vision-item col-12 col-md-4 col-lg-4">
-          <h2 class="text-center">OUR VISION</h2>
-          <p>To inspire society in a way that unprivileged children have access to resources just like every other child, enabling them to achieve immediate and lasting change in their lives.</p>
+        <h2 class="text-center fw-bolder" style="color: deeppink;">OUR VISION</h2>
+        <p>To inspire society in a way that unprivileged children have access to resources just like every other child, enabling them to achieve immediate and lasting change in their lives.</p>
       </div>
       <div class="vision-item col-12 col-md-4 col-lg-4">
-          <h2 class="text-center">OUR MISSION</h2>
-          <p>To narrow the gap between different sections of society by educating, enabling, and empowering every child.</p>
+        <h2 class="text-center fw-bolder" style="color: deeppink;">OUR MISSION</h2>
+        <p>To narrow the gap between different sections of society by educating, enabling, and empowering every child.</p>
       </div>
       <div class="vision-item col-12 col-md-4 col-lg-4">
-          <h2 class="text-center">OUR MOTTO</h2>
-          <p>We at Nanhi Kashtiyan believe that education matters. We strive to nourish the minds and bodies of our children because they are the future change-makers. With adequate resource allocation, every mind has the ability to achieve the impossible and bring about positive change in society.</p>
+        <h2 class="text-center fw-bolder" style="color: deeppink;">OUR MOTTO</h2>
+        <p>To nourish the minds and bodies of our children because they are the future change-makers. With adequate resource allocation, every mind has the ability to achieve the impossible and bring about positive change in society.</p>
       </div>
   </section>
 
 
-  <section class="education p-5 bg-warning-subtle">
+  <section class="education p-5 bg-dark">
     <div class="row g-5">
-      <div class="education-box p-4 col-12 col-md-6 col-lg-6">
+      <div class="education-box p-4 col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column">
         <h2 class="text-center">EDUCATING . ENABLING . EMPOWERING</h2>
         <p>Our success lies in the aim of fulfilling the 3E’s. Thus:</p>
-        <ol>
+        <ul>
           <li>We ensure regular classroom teaching to our children along with several co-curricular activities<br>such as motivational movies for children.</li>
           <li>Monthly events in the form of speaker sessions and workshops by prolific speakers on topics<br>like good touch-bad touch, self-defense, menstrual hygiene, etc.</li>
-        </ol>
+        </ul>
       </div>
   
       <div class="about-image col-12 col-md-6 col-lg-6">
-        <img src="/assets/about us/about2.jpeg" alt="Nanhi Kashtiyan Image" class="img-fluid" style="max-width: 55%; height:100%;">
+        <img src="/assets/about us/about2.jpeg" alt="Nanhi Kashtiyan Image" class="img-fluid" style="width: 100%; object-fit: cover; height: 480px;">
       </div>
     </div>
   </section>
   
-  
-
   <section class="students-impacted p-5">
     <div class="boxes">
       <div class="box">
@@ -141,9 +139,9 @@
           <h1 id="students">0</h1>
           <p>STUDENTS IMPACTED</p>
       </div>
-  </div>
-
+    </div>
   </section>
+
   <script>
     // Animate the numbers
     const years = document.getElementById('years');
@@ -155,58 +153,58 @@
     const duration = 20000; // Animation duration in milliseconds
 
     function animateCounters() {
-        const step = 50; // Increment step
-        const steps = duration / step;
-        let currentStep = 0;
+      const step = 50; // Increment step
+      const steps = duration / step;
+      let currentStep = 0;
 
-        function updateCounter(element, target) {
-            const increment = (target - 0) / steps;
-            const interval = setInterval(() => {
-                currentStep++;
-                const value = Math.round(increment * currentStep);
-                element.textContent = value;
-                if (currentStep >= steps) {
-                    clearInterval(interval);
-                }
-            }, step);
-        }
+      function updateCounter(element, target) {
+          const increment = (target - 0) / steps;
+          const interval = setInterval(() => {
+              currentStep++;
+              const value = Math.round(increment * currentStep);
+              element.textContent = value;
+              if (currentStep >= steps) {
+                  clearInterval(interval);
+              }
+          }, step);
+      }
 
-        updateCounter(years, targetValues[0]);
-        updateCounter(volunteers, targetValues[1]);
-        updateCounter(campaigns, targetValues[2]);
-        updateCounter(students, targetValues[3]);
+      updateCounter(years, targetValues[0]);
+      updateCounter(volunteers, targetValues[1]);
+      updateCounter(campaigns, targetValues[2]);
+      updateCounter(students, targetValues[3]);
     }
 
     // Trigger the animation when the page loads
     window.addEventListener('load', animateCounters);
-</script>
+  </script>
 
-<section class="support-section p-5" style="background-color: lightpink;">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-12 col-md-6 col-lg-6">
-        <div><img class="img-fluid rounded-3" src="/assets/about us/img3.jpeg" style="width: 100%; object-fit: cover; height: 500px;"></div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column">
-        <div>
-          <h2 class="lead" style="font-size: 30px; font-weight: bold; word-wrap: normal;">SUPPORT OUR VOLUNTEER PROGRAM TO EMPOWER CHILDREN</h2>
-          <div class="donatebutton">
-            <a href="/components/GET_INVOLVED/donate.html"><button class="donate-button" >Donate Now</button></a>
+  <section class="support-section p-5" style="background-color: lightpink;">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div><img class="img-fluid rounded-3" src="/assets/about us/img3.jpeg" style="width: 100%; object-fit: cover; height: 500px;"></div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+          <div>
+            <h2 class="lead" style="font-size: 30px; font-weight: bold; word-wrap: normal;">SUPPORT OUR VOLUNTEER PROGRAM TO EMPOWER CHILDREN</h2>
+            <div class="donatebutton">
+              <a href="/components/GET_INVOLVED/donate.html"><button class="donate-button" >Donate Now</button></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="py-5">
     <div class="container text-center mt-5">
-      <h1 class="heading text-capitalize" style="color:deeppink ;">our testimonials </h1>
+      <h1 class="heading text-capitalize">our testimonials </h1>
       <hr class="w-25 mx-auto">
     </div>
 
     <div class="col-12 col-lg-8 col-xxl-7 text-center mx-auto">
-      <h2 class="display-5 fw-bold">WHAT PEOPLE SAY ABOUT US </h2>
+      <h2 class="display-5 fw-bold" style="color:deeppink ;">WHAT PEOPLE SAY ABOUT US </h2>
       <p class="lead"></p>
     </div>
 
@@ -229,6 +227,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-6 d-flex align-items-start">
           <img alt="" class="img-fluid rounded-circle me-3" height="96" src="https://freefrontend.dev/assets/square-small.png" width="96">
           <div class="bg-light p-3 p-md-5">
@@ -248,10 +247,7 @@
       </div>
     </div>
   </section>
-    
-  <!-- hey vivek, you can add your content here -->
-
-
+  
   <section class="location-section bg-dark text-white p-5">
     <div class="container">
         <div class="row ">
