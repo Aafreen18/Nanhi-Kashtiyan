@@ -39,3 +39,38 @@ body {
  .align-items-center {
     align-items: center;
   }
+
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.video-box {
+    border: 1px solid #ccc; /* Optional: for visual debugging */
+    position:relative; /* Needed for iframe sizing */
+    padding-bottom: 100.25%; /* Aspect ratio for 16:9 videos */
+    height: 0; /* Reset height */
+}
+
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 80%;
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio while filling container */
+    border: 0; /* Remove default iframe border */
+}
+.img-fluid.rounded {
+  height: 350px; /* Adjust based on your preference */
+  width: 350px; /* Adjust based on your preference */
+  object-fit: cover; /* Ensures the aspect ratio is maintained */
+}
+.img-fluid.rounded:hover {
+  background-color: pink; /* Change the background color on hover */
+  /* Additional hover styles (e.g., font color, box shadow, etc.) */
+  transform: scale(1.1);
+}
