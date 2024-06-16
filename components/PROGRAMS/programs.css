@@ -1,3 +1,36 @@
-.our_programs{
-    text-align: center;
-}
+/* CSS */
+#new-section {
+    background-color: #f7f7f7; /* Light grey background */
+    padding: 20px; /* Spacing around the content */
+  }
+  
+  #new-section h2 {
+    color: #333; /* Dark grey color for the heading */
+    text-align: center; /* Center align the heading */
+    font-weight: bold;
+    
+  }
+  #our-projects {
+    
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: overline;
+  }
+
+  .donate-button {
+    background-color: #f06c9b; /* Pink color for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: .25rem; /* Rounded corners for the button */
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .donate-button:hover {
+    background-color: #e0638b; /* Slightly darker pink on hover */
+  }
