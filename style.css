@@ -69,20 +69,6 @@ a:hover .btn {
     height: 500px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 100px; /* Adjust size */
-  height: 100px; /* Adjust size */
-  background-color: black;
-}
-
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-  font-weight: 900;
-  color:red; /* Change to desired color */
-  font-size: 3rem; /* Change to desired size */
-}
-
 .donate-section{
     display: flex;
     justify-content: center; 
@@ -98,3 +84,17 @@ a:hover .btn {
     margin-left: auto;
 }
 
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: 95vh;
+    
+}
+.active {
+    display: block;
+}
