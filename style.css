@@ -63,8 +63,6 @@ a:hover .btn {
     object-fit: cover;
 }
 
-
-    
 .media-container img, video{
     width: 100%; 
     object-fit: cover; 
@@ -80,8 +78,6 @@ a:hover .btn {
 
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
-  
-    
   font-weight: 900;
   color:red; /* Change to desired color */
   font-size: 3rem; /* Change to desired size */
@@ -101,3 +97,4 @@ a:hover .btn {
     overflow: hidden;
     margin-left: auto;
 }
+
