@@ -14,8 +14,6 @@
 </head>
 
 <body>
-  
-  
   <nav class="navbar navbar-expand-lg p-5" data-bs-theme="dark">
     <div class="container nav-container" style="margin-left: 0;padding-left: 0;">
       <div class="nav-img"><img src="/assets/ngo_logo3.png" width="60vh" height="60vh"></div>
@@ -39,13 +37,23 @@
               <li><a class="dropdown-item" href="/components/ABOUT_US/inspiration.html">INSPIRATION BEHIND NANHI KASHTIYAN</a></li>
             </ul>
           </li>
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/components/PROGRAMS/programs.html">Programs</a>
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./components/PROGRAMS/programs.html" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li><a class="dropdown-item" href="/components/PROGRAMS/successStory.html">OUR Success Story</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/components/EVENTS/events.html">Events</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/components/EVENTS/events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <li><a class="dropdown-item" href="/components/EVENTS/journey.html">OUR JOURNEY</a></li>
+            </ul>
           </li>
 
           <li class="nav-item dropdown">
@@ -70,14 +78,13 @@
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
 
   <section class="NoOfChildren bg-body-secondary p-5">
     <div class="container text-center mt-5">
       <h1 class="heading">Sponsor A Child</h1>
       <hr class="w-25 mx-auto">
     </div>
-
 
     <div class="container p-5">
       <div class="form-section mx-auto">
@@ -151,7 +158,6 @@
             </div>
           </div>
 
-
           <div class="mb-3">
             <div class="row">
               <div class="col-lg-2 col-12">
@@ -175,44 +181,28 @@
 
           <div class="mb-3">
             <div class="row">
-              <div class="col-lg-6 col-12">
-                <label for="streetAddress" class="form-label">Street Address</label>
-                <input type="text" class="form-control" id="streetAddress" placeholder="Enter street address" required>
+              <div class="col-lg-12 col-12">
+                <label for="Address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter address" required>
               </div>
-              <div class="col-lg-6 col-12">
-                <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city" placeholder="Enter city" required>
-              </div>
-              <div class="col-lg-6 col-12">
-                <label for="state" class="form-label">State/Province/Region</label>
-                <input type="text" class="form-control" id="state" placeholder="Enter state/province/region" required>
-              </div>
-              <div class="col-lg-6 col-12">
-                <label for="zip" class="form-label">Postal/ZIP Code</label>
-                <input type="text" class="form-control" id="zip" placeholder="Enter postal/ZIP code" required>
-              </div>
-
-
             </div>
           </div>
 
           <div class="mb-3">
             <div class="row">
               <div class="col-lg-6 col-12">
-                <label for="country" class="form-label">Country</label>
-                <input type="text" class="form-control" id="country" placeholder="Enter country" required>
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter city" required>
               </div>
               <div class="col-lg-6 col-12">
                 <label for="panNumber" class="form-label">PAN (Permanent Account Number)</label>
                 <input type="text" class="form-control" id="panNumber" placeholder="Enter PAN number" required
                   pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
               </div>
-
             </div>
           </div>
-          <button id="rzp-button1" class="border border-0 p-2 text-white"
-            style="background-color: rgb(235, 117, 200);">Pay Now</button>
 
+          <button id="rzp-button1" class="donate-button text-white">Pay Now</button>
         </form>
       </div>
     </div>
@@ -284,9 +274,6 @@
         });
     })();
   </script>
-
-
-
 
   <script src="./info.js"></script>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
