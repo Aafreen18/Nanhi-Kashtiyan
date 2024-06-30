@@ -141,15 +141,27 @@
           </div>
           <div class="mb-3">
             <div class="row">
-              <div class="col-lg-6 col-12">
+              <div class="col-lg-4 col-12">
                 <label for="educationalQualification" class="form-label">Educational Qualification</label>
                 <input type="text" class="form-control" id="educationalQualification" placeholder="Enter your educational qualification" required>
               </div>
             
-              <div class="col-lg-6 col-12">
+              <div class="col-lg-4 col-12">
                 <label for="volunteerExperience" class="form-label">Volunteer Experience</label>
                 <input type="text" class="form-control" id="volunteerExperience" placeholder="Describe your volunteer experience" required>
-            </div>            
+              </div>
+              
+              <div class="col-lg-4 col-12">
+                <label for="department" class="form-label">Department</label>
+                <select class="form-control" id="department" required>
+                  <option value="" disabled selected>Select your department</option>
+                  <option value="education">Education</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="environment">Environment</option>
+                  <option value="community">Community</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             
             </div>
           </div>
@@ -157,7 +169,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn-submit border border-0 p-2 text-white">Submit</button>
+          <button type="submit" class="btn-submit donate-button text-light">Submit</button>
         </form>
       </div>
     </div> 
