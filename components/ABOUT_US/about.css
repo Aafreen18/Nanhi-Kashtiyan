@@ -80,21 +80,6 @@ font-size: 5em;
     padding: 10%;
 }
 
-.donate-button {
-    background-color:  rgb(235, 117, 200);
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.donate-button:hover {
-    background-color: rgb(235, 117, 200); /* Lighter shade of pink on hover */
-}
-
 
 h2 {
     color: #333;
