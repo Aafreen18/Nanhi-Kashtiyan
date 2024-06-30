@@ -78,3 +78,7 @@ h1 {
     margin-left: auto;
 }
 
+.department_Options:hover{
+    background-color: rgb(235, 117, 200) !important;
+    color: black !important;
+}

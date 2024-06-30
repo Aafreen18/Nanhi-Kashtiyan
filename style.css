@@ -13,6 +13,11 @@ nav{
     margin-right: 10px;
 }
 
+.dropdown-item:hover {
+    background-color: rgb(235, 117, 200) !important;
+    color: black !important;
+}
+
 .details-section{
     background-color: #BD97CB;
 }
