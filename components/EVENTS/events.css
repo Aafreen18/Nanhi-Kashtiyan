@@ -4,6 +4,7 @@ body {
  .section-container {
     padding-top: 50px;
     padding-bottom: 50px;
+    
   }
   h2 {
     color: #333;
@@ -73,4 +74,8 @@ body {
   background-color: pink; /* Change the background color on hover */
   /* Additional hover styles (e.g., font color, box shadow, etc.) */
   transform: scale(1.1);
+}
+
+.img-fluid {
+  max-height: 400px;
 }
