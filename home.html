@@ -9,7 +9,6 @@
   <title>Nanhi Kashtiyan</title>
 </head>
 <body>
-  
   <nav class="navbar navbar-expand-lg p-5" data-bs-theme="dark">
     <div class="container nav-container" style="margin-left: 0;padding-left: 0;">
       <div class="nav-img"><img src="/assets/ngo_logo3.png" width="60vh" height="60vh"></div>
@@ -34,12 +33,22 @@
             </ul>
           </li>
           
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/components/PROGRAMS/programs.html">Programs</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./components/PROGRAMS/programs.html" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li><a class="dropdown-item" href="/components/PROGRAMS/successStory.html">OUR Success Story</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/components/EVENTS/events.html">Events</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./components/EVENTS/events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <li><a class="dropdown-item" href="/components/EVENTS/journey.html">OUR JOURNEY</a></li>
+            </ul>
           </li>
 
           <li class="nav-item dropdown">
@@ -69,7 +78,7 @@
   <section class="video-section">
     <div class="outer-div">
       <div class="video-container">
-        <video src="./assets/video1.mp4" type="video/mp4" autoplay loop muted></video>
+        <video src="./assets/homeVideo.mp4" type="video/mp4" autoplay loop muted></video>
       </div>
     </div>
   </section>
@@ -81,37 +90,11 @@
     </div>
   </section>  
 
-  <section class="cause-section bg-body-secondary p-5">
-    <div class="container align-items-center mt-5" >
-      <div class="row g-5">
-        <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center">
-          <div class="card shadow">
-            <div class="card-body">
-              <h5 class="card-title text-center fw-bolder" style="color:deeppink">Eductaion</h5>
-              <p class="card-text text-black-50">Across the spectrum from Early Childhood Education to Secondary Education, our programs strive to achieve focused objectives.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container p-5">
-      <div class="row g-5 media-container">
-        <div class="col-lg-6">
-          <img src="./assets/skill .jpg" alt="skill">
-        </div>
-        <div class="col-lg-6">
-          <video src="./assets/skill2.mp4" type="video/mp4" autoplay loop muted></video>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="skill-section bg-body-secondary p-5">
     <div class="col-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center">
       <div class="card shadow">
         <div class="card-body">
-          <h5 class="card-title text-center fw-bolder" style="color:deeppink">Skill Training</h5>
+          <h5 class="card-title text-center fw-bolder" style="color:deeppink">Life Skills</h5>
           <p class="card-text text-black-50" >The objective is to train youth from economically disadvantaged backgrounds and provide them with employable skills.</p>
         </div>
       </div>
@@ -120,8 +103,12 @@
     <div class="container p-5">
       <div class="row g-5 media-container">
         <div class="col-lg-6">
-          <video src="assets/edu1.mp4" type="video/mp4" autoplay loop muted ></video>
+          <video src="assets/skill2.mp4" type="video/mp4" autoplay loop muted ></video>
         </div>
+        <div class="col-lg-6">
+          <video src="assets/edu2.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+
         <div class="col-lg-6">
           <video src="assets/edu2.mp4" type="video/mp4" autoplay loop muted></video>
         </div>
@@ -187,12 +174,12 @@
       <h2>We at Nanhi Kashtiyan believe that education matters and we aim to ensure inclusively of the underpriviledged children with the progressive  society</h2>
     </div>
 
-    <div class="slideshow-container">
-      <img src="/assets/slide6.jpg" class="slide active">
-      <img src="/assets/slide2.jpg" class="slide">
+    <div class="slideshow-container pt-5">
+      <img src="/assets/slide2.jpg" class="slide active">
+      <img src="/assets/slide1.jpg" class="slide">
       <img src="/assets/slide3.jpg" class="slide">
       <img src="assets/slide4.jpg" class="slide">
-  </div>
+    </div>
   </section>
   
   <section class="donate-section p-5">
@@ -203,9 +190,9 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-start">
-          <p class="text-white-50">Help us reach more children to transform their lives for the better. Join your hands with us for better life and beautiful future. Be a part of the change making process. Be a donor. Involve in the creation of a holistic development of children in need. All the donations are exempted under the section 80G of IT act.</p>
+          <p class="text-white fw-bolder">Help us reach more children to transform their lives for the better. Join your hands with us for better life and beautiful future. Be a part of the change making process. Be a donor. Involve in the creation of a holistic development of children in need.</p>
           <div class="text-center text-md-start">
-            <a href="/components/GET_INVOLVED/donate.html"><button type="button" class="btn text-center fw-bolder" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Get Best Services" style="background-color: rgb(235, 117, 200);">DONATE NOW</button></a>
+            <a href="/components/GET_INVOLVED/donate.html"><button type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Get Best Services" class="donate-button">DONATE NOW</button></a>
           </div>
         </div>
       

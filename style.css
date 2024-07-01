@@ -13,6 +13,11 @@ nav{
     margin-right: 10px;
 }
 
+.dropdown-item:hover {
+    background-color: rgb(235, 117, 200) !important;
+    color: black !important;
+}
+
 .details-section{
     background-color: #BD97CB;
 }
@@ -92,9 +97,25 @@ a:hover .btn {
 .slide {
     display: none;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     
 }
 .active {
     display: block;
+}
+
+.donate-button {
+    background-color: deeppink;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: rgb(235, 117, 200); /* Lighter shade of pink on hover */
+    color: white !important;
 }

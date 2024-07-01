@@ -34,12 +34,22 @@
             </ul>
           </li>
           
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/components/PROGRAMS/programs.html">Programs</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./components/PROGRAMS/programs.html" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li><a class="dropdown-item" href="/components/PROGRAMS/successStory.html">OUR Success Story</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/components/EVENTS/events.html">Events</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/components/EVENTS/events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <li><a class="dropdown-item" href="/components/EVENTS/journey.html">OUR JOURNEY</a></li>
+            </ul>
           </li>
 
           <li class="nav-item dropdown">
@@ -64,7 +74,7 @@
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
 
   <section class="inspiration-section">
     <div class="background-image"></div>
@@ -98,16 +108,18 @@
     </div>
   </section>
 
-  <section style="background-image: none; padding-top: 50px;" class="p-5">
-    <div class="d-flex flex-column ">
-      <h1 style="font-family: 'Times New Roman', Times, serif;background-image: none; font-weight: bold;" >
-        YOUR SUPPORT MAKES THIS HAPPEN
-      </h1>
-      <p class="px-3">Your support can enable millions of children and youth to continue learning.<br> Your 
-        contribution will be directed to the programme that has the funds deficit.
-      </p>
-      <div class="donatebutton" style="text-align:justify; padding-left: 150px;padding-bottom: 50px;">
-        <a href="/components/GET_INVOLVED/donate.html"> <button class="donate-button">Donate Now</button></a>
+  <section class="p-5" style="background-color: lightpink;">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6">
+        <img class="img-fluid rounded-3" src="/assets/donate5.jpg" style="width: 100%; object-fit: cover;object-position: right top; height: 500px;">
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column">
+        <p class="mx-5">Contributions can fund scholarships, school supplies, and extracurricular programs, fostering a supportive learning environment. </p>
+        <p class="mx-5">These donations empower children to achieve their full potential and build a brighter future.</p>
+        <div class="donatebutton">
+          <a href="/components/GET_INVOLVED/donate.html"> <button class="donate-button text-black">Donate Now</button></a>
+        </div>
       </div>
     </div>
   </section>
@@ -168,7 +180,6 @@
       </div>
     </div>
   </footer>
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>

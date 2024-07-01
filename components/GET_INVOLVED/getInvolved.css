@@ -1,8 +1,8 @@
 .background-div {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+    height: 100vh; 
+    background-image: url('your-background-image.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 h1 {
-    color: white; /* Adjust text color based on your background */
+    color: white; 
     font-size: 3em;
     text-align: center;
 }
@@ -54,7 +54,7 @@ h1 {
     height: 90vh; 
     background-image: linear-gradient(rgba(22, 22, 22, 0.8), rgba(22, 22, 22, 0.7)), url(/assets/donate2.jpg);
     background-size: cover;
-    background-position: top center; /* Adjust this as needed */
+    background-position: top center; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 6rem 0;
@@ -76,4 +76,9 @@ h1 {
     padding: 6rem 0;
     overflow: hidden;
     margin-left: auto;
+}
+
+.department_Options:hover{
+    background-color: rgb(235, 117, 200) !important;
+    color: black !important;
 }

@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -10,7 +8,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #ff66b2; /* Pink color for headings */
+  color: #ff66b2; 
 }
 
 .sponsor-form {
@@ -20,8 +18,7 @@ h1 {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Align the form to the right */
-  
+  text-align: center;   
 }
 
 label {
@@ -40,39 +37,27 @@ select {
   font-size: 14px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #ff66b2;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #ff3385;
-}
-
 #cost-display {
-  border: 2px solid #FF69B4; /* Pink border */
-            padding: 10px;
-            background-color: #FFF0F5; /* Light pink background */
-            font-weight: bold;
-            text-align: center; /* Center the text */
-            width: 30%; /* Adjust the width as needed */
-            margin-right: auto; /* Shift the entire box to the right */
-            margin-left: auto; /* Shift the entire box to the left (center) */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #FF69B4; 
+  padding: 10px;
+  background-color: #FFF0F5; 
+  font-weight: bold;
+  text-align: center; 
+  width: 30%; 
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
   margin-bottom: 20px;
 }
+
 label {
   font-weight: bold;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -82,6 +67,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 input[type="submit"] {
   background-color: #007bff;
   color: #ffffff;
@@ -90,9 +76,11 @@ input[type="submit"] {
   padding: 10px 20px;
   cursor: pointer;
 }
+
 input[type="submit"]:hover {
   background-color: #0056b3;
 }
+
 .confirmation-message {
   display: none;
   text-align: center;
@@ -100,6 +88,7 @@ input[type="submit"]:hover {
   color: #007bff;
   margin-top: 10px;
 }
+
 .sponsershippara{
   font-size: large; font-weight: bold; padding-left: 30px;
   
@@ -117,7 +106,7 @@ input[type="submit"]:hover {
 
 .custom-box {
   flex: 1;
-  max-width: 45%; /* Adjust the width as needed */
+  max-width: 45%; 
   border: 2px solid #ddd;
   padding: 20px;
   border-radius: 10px;
@@ -125,7 +114,6 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/* Styling for the buttons */
 .custom-button {
   background-color: #ff69b4;
   color: white;
@@ -139,3 +127,4 @@ input[type="submit"]:hover {
 .custom-button:hover {
   background-color: #ff4785;
 }
+
