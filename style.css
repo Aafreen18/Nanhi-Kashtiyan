@@ -119,3 +119,12 @@ a:hover .btn {
     background-color: rgb(235, 117, 200); /* Lighter shade of pink on hover */
     color: white !important;
 }
+
+@media (max-width: 992px) {
+.navbar {
+    height: auto; /* Adjust based on your design */
+    }
+}
+
+   
+   
