@@ -1,0 +1,11 @@
+#pdf-viewer {
+    width: 100%;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    height: 600px;
+    background-color: black;
+    text-align: center;
+}
+.pdf-page {
+    margin-bottom: 20px;
+}
