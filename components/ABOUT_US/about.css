@@ -1,6 +1,9 @@
 body {
     margin: 0;
-    font-family: Georgia, serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     background-color: white;
     padding: 0;
 }
