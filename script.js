@@ -1,3 +1,10 @@
+const time = new Date().getFullYear();
+document.getElementById("footer-p").innerText = "©" + time + " Nanhi Kashtiyan | ALL RIGHTS RESERVED";
+
+
+
+
+
 let slideIndex = 0;
 const slides = document.getElementsByClassName('slide');
 
@@ -15,7 +22,4 @@ function showSlides() {
 
 showSlides();
 
-
-const time = new Date().getFullYear();
-document.getElementById("footer-p").innerText = "©" + time + " Nanhi Kashtiyan | ALL RIGHTS RESERVED";
 
