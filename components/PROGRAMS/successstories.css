@@ -70,3 +70,10 @@ body{
     margin: 10px auto; /* Centers the image horizontally and adds vertical margins */
     object-fit: contain; /* Ensures the image covers the box without stretching */
 }
+
+.custom-img {
+    max-width: 100%; /* Ensures the image does not exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    width: 400px; /* Set your desired width */
+    height: 500px; /* Set your desired height */
+}

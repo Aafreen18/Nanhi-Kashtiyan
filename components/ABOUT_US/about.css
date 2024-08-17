@@ -120,3 +120,6 @@ p {
     font-size: 35px; 
     color: #333; 
 }
+.my-custom-container {
+    max-width: 100%; /* Adjust as needed */
+}
